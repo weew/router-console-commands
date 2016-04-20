@@ -63,7 +63,9 @@ class RouterDumpCommand {
             $filters = [];
 
             foreach ($router->getRoutesMatcher()->getFiltersMatcher()->getFilters() as $filter) {
-                $filters[] = $filter->getName();
+                if ($filter->isEnabled()) {
+                    $filters[] = $filter->getName();
+                }
             }
 
             $facts[] = [
