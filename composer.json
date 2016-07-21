@@ -1,6 +1,6 @@
 {
-    "name": "weew/php-router-console-commands",
-    "description": "Console commands for the weew/php-router package.",
+    "name": "weew/router-console-commands",
+    "description": "Console commands for the weew/router package.",
     "license": "MIT",
     "authors": [
         {
@@ -19,13 +19,13 @@
         }
     },
     "require": {
-        "weew/php-router": "^2.6",
-        "weew/php-console": "^1.7"
+        "weew/router": "^2.6",
+        "weew/console": "^1.7"
     },
     "require-dev": {
         "satooshi/php-coveralls": "^0.6.1",
         "phpspec/phpspec": "^2.4",
-        "weew/php-helpers-phpspec": "^1.0",
+        "weew/helpers-phpspec": "^1.0",
         "henrikbjorn/phpspec-code-coverage": "^2.0"
     }
 }
